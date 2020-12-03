@@ -80,7 +80,7 @@ elseif ($_REQUEST['act'] == 'save_config') {
             'others' => json_encode(array())
         )
     );
-    //$tencent_center->sendUserExperienceInfo($upload_data);
+    $tencent_center->sendUserExperienceInfo($upload_data);
 
     sys_msg($_LANG['save_ok'], 0, array(array('href' => 'tencent_ims.php?act=list_edit', 'text' => $_LANG['4tencent_ims'])));
 }
